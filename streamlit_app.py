@@ -1,15 +1,15 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.graph_objects as go
 
 # Load the data
 @st.cache_data
 def load_data():
     # Update the path to the actual downloaded dataset file
-    data = pd.read_csv('World Marriage Dataset.csv')
+    data = pd.read_csv('data/World Marriage Dataset.csv')
     return data
 
 data = load_data()
